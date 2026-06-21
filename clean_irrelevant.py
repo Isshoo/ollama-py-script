@@ -5,9 +5,9 @@ import os
 from ollama import chat
 
 # Konfigurasi
-INPUT_FILE = "testing/pendidikan_balanced.xlsx"
-OUTPUT_CLEAN_FILE = "testing/pendidikan_cleaned.xlsx"
-TOPIK = "Pendidikan"  # Ubah jadi "Kesehatan" jika memproses dataset kesehatan
+INPUT_FILE = "testing/kesehatan_balanced.xlsx"
+OUTPUT_CLEAN_FILE = "testing/kesehatan_cleaned.xlsx"
+TOPIK = "Kesehatan"  # Ubah jadi "Kesehatan" jika memproses dataset kesehatan
 MODEL = "qwen2.5:14b"
 
 PROMPT_CLEAN = """

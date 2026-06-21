@@ -5,11 +5,11 @@ import os
 from ollama import chat
 
 # Konfigurasi
-INPUT_CLEAN_FILE = "testing/kesehatan_labeled.xlsx"
-OUTPUT_BALANCED_FILE = "testing/kesehatan_balanced.xlsx"
-CHECKPOINT_FILE = "testing/kesehatan_checkpoint.xlsx" # <--- TAMBAHAN: Nama file checkpoint
-TOPIK = "Kesehatan"  
-MODEL = "qwen2.5:7b"
+INPUT_CLEAN_FILE = "testing/pendidikan_cleaned.xlsx"
+OUTPUT_BALANCED_FILE = "testing/pendidikan_cleaned_balanced.xlsx"
+CHECKPOINT_FILE = "testing/pendidikan_cleaned_balanced_checkpoint.xlsx" # <--- TAMBAHAN: Nama file checkpoint
+TOPIK = "Pendidikan"  # Ubah jadi "Kesehatan" jika memproses dataset kesehatan
+MODEL = "qwen2.5:14b"
 TARGET_COUNT = 2000
 LABELS = ["senang", "percaya", "terkejut", "netral", "takut", "sedih", "marah"]
 
